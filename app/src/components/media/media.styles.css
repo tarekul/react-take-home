@@ -1,13 +1,19 @@
 .mediaContainer {
   position: relative;
-  margin-right: 20px;
 }
 
 .cover {
   border-radius: 10px;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
   .cover {
     height: 600px;
     width: 300px;
@@ -17,15 +23,15 @@
 /* tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .cover {
-    height: 300px;
-    width: 160px;
+    height: 400px;
+    width: 260px;
   }
 }
 
 /* phones */
-@media only screen and (min-width: 320px) and (max-width: 500px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
   .cover {
-    height: 240px;
-    width: 110px;
+    height: 340px;
+    width: 210px;
   }
 }

@@ -1,0 +1,14 @@
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 30px;
+  color: lightgrey;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  border: 0.5px solid lightgrey;
+}

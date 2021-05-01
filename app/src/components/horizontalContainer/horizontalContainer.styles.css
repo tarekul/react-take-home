@@ -1,0 +1,13 @@
+.container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  overflow: scroll;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

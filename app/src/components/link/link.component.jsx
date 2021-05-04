@@ -1,14 +1,20 @@
 import React from "react";
 import "./link.styles.css";
 
-export default function LinkComp() {
+export default function LinkComp({ download_url, tracking_link }) {
+  const handleCopy = () => {
+    navigator.clipboard.writeText(tracking_link);
+  };
   return (
-    <div class="linkContainer">
-      <span className="link">
-        <i class="fas fa-link"></i>
+    <div className="linkContainer">
+      <span className="link" onClick={(e) => handleCopy()}>
+        <i className="fas fa-link"></i>
       </span>
+
       <span className="link">
-        <i class="fas fa-download"></i>
+        <a href={download_url} target="_blank" rel="noopener noreferrer">
+          <i className="fas fa-download"></i>
+        </a>
       </span>
     </div>
   );

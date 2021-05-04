@@ -5,17 +5,16 @@ import Media from "../media/media.component.jsx";
 import LinkComp from "../link/link.component.jsx";
 
 export default function HorizontalContainer({ medias }) {
-  console.log(medias);
   return (
     <div className="container">
       {medias.map((m, i) => {
         const { cover_photo_url, download_url, media_type, tracking_link } = m;
         return (
-          <div className="subContainer">
+          <div className="subContainer" key={i}>
             <Media
-              key={i}
               cover_photo_url={cover_photo_url}
               media_type={media_type}
+              download_url={download_url}
             />
             <LinkComp
               download_url={download_url}
